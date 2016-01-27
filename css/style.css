@@ -30,6 +30,14 @@ html, body {
 .linkfix a {
     font-weight: 400;
     font-size: 10vw;
+	text-decoration: none;
+    color: #fff;
+
+
+}
+
+.jumbotron img {
+margin: 5%;
 }
 
 .jumbotron {
@@ -37,6 +45,19 @@ html, body {
     background-size: cover;
 	width: 100vw;
 	height: 100vh;
+}
+
+/* SERVICES */
+
+section.intro p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 4vw;
+    text-shadow: 2px 2px 5px #000;
+    text-align: center;
+    margin: 5% 0;
+    color: #FFF;
+    }
 }
 
 /* CASES */
@@ -82,11 +103,54 @@ html, body {
 	margin-right: 6px;
 }
 
+.desktop {
+	display: none;
+    }
+
 @media screen and (min-width: 768px) { 
+	
+	.mobile {
+    display: none;
+    }
+
+.desktop {
+    display: inline-block;
+    }
 
 	.linkfix a {
     font-weight: 400;
     font-size: 2vw;
 	}
+	
+	.rowmenu {
+	margin-top: 6%;
+	}
+			
+	section.intro p {
+    font-size: 2vw; 
+    text-align: left;
+    margin: 2% 0;
+    }
+	
+	.intro {
+    width: 95%;
+    margin: 0 auto;
+    }
+	
+	
+	.linkfix a.slide:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    transition: width .5s ease, background-color .5s ease;
+    }
+    
+.linkfix a.slide:hover:after {
+    width: 100%;
+    background: #D7342C;
+    }
+	
 
 }
