@@ -1,31 +1,18 @@
-/* GENERIC STYLES */
-html, body {
-    background: #FFF;
-    font-size: 14px;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
+/* BASIC STYLES
+----------------------------------------------- */
 
-/* HEADING STYLE */
+/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic);
+/* @import url(https://fonts.googleapis.com/css?family=Roboto); */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
-.rubrik > h1 {
-  font-weight: 300;
-  font-size: 30px;
-  letter-spacing: 20px;
-  line-height: 70px;
-}
+/* BASIC STYLES */
+@import "basic.css";
 
-.rubrik hr {
-  margin: 20px auto;
-  width: 10%;
-  border-top: 1px solid red;
-}
-
-
-/* HEADER */
+/* HEADER
+----------------------------------------------- */
+@import "header.css";
 
 .linkfix a {
     font-weight: 400;
@@ -39,30 +26,17 @@ html, body {
 	height: 100vh;
 }
 
-/* CASES */
+/* INTRO
+----------------------------------------------- */
+@import "intro.css";
 
-.cases{
-    min-height: 110vh;
-}
+/* SERVICES
+----------------------------------------------- */
+@import "services.css";
 
-.case-item{
-    min-height: 400px;
-	height: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.back{
-    background: #ebebeb;
-    padding: 2%;
-}
-
-.project-links{
-    list-style: none;
-    color: #fff;
-    padding: 0;
-}
-
+/* CASES
+----------------------------------------------- */
+@import "cases.css";
 .project-links li{
     display: inline-block;
     padding: 2%;
@@ -81,6 +55,18 @@ html, body {
 .project-links li a i{
 	margin-right: 6px;
 }
+
+/* ABOUT
+----------------------------------------------- */
+@import "about.css";
+
+/* CONTACT
+----------------------------------------------- */
+@import "contact.css";
+
+/* FOOTER
+----------------------------------------------- */
+@import "footer.css";
 
 @media screen and (min-width: 768px) { 
 
