@@ -24,6 +24,21 @@ html, body {
   border-top: 1px solid red;
 }
 
+
+/* HEADER */
+
+.linkfix a {
+    font-weight: 400;
+    font-size: 10vw;
+}
+
+.jumbotron {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+	width: 100vw;
+	height: 100vh;
+}
+
 /* CASES */
 
 .cases{
@@ -65,4 +80,13 @@ html, body {
 
 .project-links li a i{
 	margin-right: 6px;
+}
+
+@media screen and (min-width: 768px) { 
+
+	.linkfix a {
+    font-weight: 400;
+    font-size: 2vw;
+	}
+
 }
