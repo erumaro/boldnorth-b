@@ -19,14 +19,35 @@
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+    
+    <!-- SMOOTH SCROLL -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+    <!-- End of SMOOTH SCROLL -->
+    
 </head>
 
 <body>
 <div class="jumbotron">
 	<div class="row">
 		<div class="col-md-4">
-			<img src="./img/mobile_logo_white.png" alt="Bold North" class="img-responsive mobile">
-			<img src="./img/desktop_logo_white.png" alt="Bold North" class="img-responsive desktop">
+			<img src="./img/mobile_logo_white.png" alt="Bold North" class="img-responsive mobile hidden-md hidden-lg">
+			<img src="./img/desktop_logo_white.png" alt="Bold North" class="img-responsive desktop hidden-xs hidden-s">
 		</div>
 
 		<div class="col-md-8">
@@ -34,16 +55,16 @@
 				<div class="linkfix">
 					<ul class="col-md-12 list-unstyled text-center text-uppercase">
 						<div class="col-xs-12 col-md-4">
-							<li><a href="#" class="slide">Våra Tjänster</a></li>
+							<li><a href="#services" class="slide">Våra Tjänster</a></li>
 						</div>
 						<div class="col-xs-12 col-md-2">
-							<li><a href="#" class="slide">Cases</a></li>
+							<li><a href="#cases" class="slide">Cases</a></li>
 						</div>
 						<div class="col-xs-12 col-md-2">
-							<li><a href="#" class="slide">Om oss</a></li>
+							<li><a href="#about" class="slide">Om oss</a></li>
 						</div>
 						<div class="col-xs-12 col-md-2">
-							<li><a href="#" class="slide">Kontakt</a></li>
+							<li><a href="#contact" class="slide">Kontakt</a></li>
 						</div>
 					</ul>
 				</div>
@@ -63,7 +84,7 @@
 	
 </div>
 
-	<section>
+	<section id="services">
 		<div class="rubrik row">
 		<h1 class="text-center text-uppercase">Våra tjänster</h1>
 		<hr>
@@ -75,9 +96,9 @@
 					<div class="thumbnail">
 						<img src="img/html.png" class="img-thumbnail img-circle" alt="HTML5">
 						<div class="caption">
-							<p>
-								Esse despicationes laboris labore vidisse, labore ex incididunt. Quae laboris ea deserunt in est esse est dolor se si malis expetendis cupidatat eu o aliqua minim aliqua proident, quo quorum offendit fidelissimae, nam varias proident eiusmod, fabulas legam quorum hic veniam ea eram pariatur nescius. Sint do est malis proident, sunt pariatur eu graviterque, est et malis cupidatat ad fugiat officia ab appellat. Commodo sint litteris nescius est eu cupidatat non pariatur, te fore eu quem, laboris enim aliqua proident esse. Ut labore nescius deserunt, do duis mandaremus pariatur. A noster commodo illustriora se fugiat adipisicing deserunt noster mentitum. A esse ne sint, vidisse est lorem qui et varias aliqua id iudicem, mentitum nisi iis nescius comprehenderit ita ingeniis ab magna ut legam senserit ea labore sint, nulla o ut culpa possumus, fabulas ex quis nostrud.
-							</p>
+                        <p><em>HTML5</em> är den senaste standarden för märkspråken HTML och XHTML. Denna version fastställdes som slutgiltig och rekommenderad av organisationen World Wide Web Consortium (W3C) den 28 Oktober 2014. Standarden påbörjades av Web Hypertext Application Technology Working Group (WHATWG) och är den femte revisionen av HTML.</p>
+
+                        <p>Ledande principer för utvecklingen är bakåtkompatibilitet med existerande HTML, tydligare beskrivningar av hur webbläsare skall tolka och rendera koden och utvidgad funktionalitet. HTML5 inkluderar tekniker för ljud, video, grafik och webbapplikationer, såväl som text och bild</p>
 						</div>
 					</div>
 				</div>
@@ -86,9 +107,8 @@
 					<div class="thumbnail">
 						<img src="img/css.png" class="img-thumbnail img-circle" alt="CSS">
 						<div class="caption">
-							<p>
-								Esse despicationes laboris labore vidisse, labore ex incididunt. Quae laboris ea deserunt in est esse est dolor se si malis expetendis cupidatat eu o aliqua minim aliqua proident, quo quorum offendit fidelissimae, nam varias proident eiusmod, fabulas legam quorum hic veniam ea eram pariatur nescius. Sint do est malis proident, sunt pariatur eu graviterque, est et malis cupidatat ad fugiat officia ab appellat. Commodo sint litteris nescius est eu cupidatat non pariatur, te fore eu quem, laboris enim aliqua proident esse. Ut labore nescius deserunt, do duis mandaremus pariatur. A noster commodo illustriora se fugiat adipisicing deserunt noster mentitum. A esse ne sint, vidisse est lorem qui et varias aliqua id iudicem, mentitum nisi iis nescius comprehenderit ita ingeniis ab magna ut legam senserit ea labore sint, nulla o ut culpa possumus, fabulas ex quis nostrud.
-							</p>
+                            <p><em>CSS (Cascading Style Sheets)</em> är ett språk som beskriver presentationsstilen för ett strukturerat dokument som till exempel typsnitt, textstorlek och färg. Tekniken är ett sätt att anpassa dokumentet med hänsyn till datortyp, skärmupplösning, färgdjup och installerade typsnitt.</p>
+                            <p>Ett HTML-baserat dokument har inte på förhand en given utformning utan består av strukturerad text utan stilinformation. Hur dokumentet skrivs ut på papper, på en webbsida, på displayen i en mobiltelefon eller en handdator, bestäms normalt av programmet som hanterar dokumentet (t.ex. webbläsaren), utgående från programmets inställningar.</p>
 						</div>
 					</div>
 				</div>
@@ -97,9 +117,7 @@
 					<div class="thumbnail">
 						<img src="img/js.PNG" class="img-thumbnail img-circle" alt="JS">
 						<div class="caption">
-							<p>
-								Esse despicationes laboris labore vidisse, labore ex incididunt. Quae laboris ea deserunt in est esse est dolor se si malis expetendis cupidatat eu o aliqua minim aliqua proident, quo quorum offendit fidelissimae, nam varias proident eiusmod, fabulas legam quorum hic veniam ea eram pariatur nescius. Sint do est malis proident, sunt pariatur eu graviterque, est et malis cupidatat ad fugiat officia ab appellat. Commodo sint litteris nescius est eu cupidatat non pariatur, te fore eu quem, laboris enim aliqua proident esse. Ut labore nescius deserunt, do duis mandaremus pariatur. A noster commodo illustriora se fugiat adipisicing deserunt noster mentitum. A esse ne sint, vidisse est lorem qui et varias aliqua id iudicem, mentitum nisi iis nescius comprehenderit ita ingeniis ab magna ut legam senserit ea labore sint, nulla o ut culpa possumus, fabulas ex quis nostrud.
-							</p>
+                            <p><em>Javascript</em> är ett skriptspråk som är dynamiskt och hanterar funktioner som första-klass-objekt. Javascript används främst på klientsidan i webbtillämpningar, det vill säga exekveras i en webbläsares javascript-motor. Då Javascript används i webbläsare arbetar det mot ett gränssnitt som kallas Document Object Model (DOM). Vanligtvis inbäddas Javascript i, eller inkluderas från, HTML-sidor. Exempel på användningsområden är kontroll av ifyllda fält innan formulär skickas till en server, funktioner för att visa eller dölja delar av en sida och växling av annonsbilder med visst intervall. Javascript kan även användas för mer avancerade funktioner i en webbläsare såsom spel och bildbehandling.</p>
 						</div>
 					</div>
 				</div>
@@ -108,9 +126,9 @@
 					<div class="thumbnail">
 						<img src="img/wp.png" class="img-thumbnail img-circle" alt="WP">
 						<div class="caption">
-							<p>
-								Esse despicationes laboris labore vidisse, labore ex incididunt. Quae laboris ea deserunt in est esse est dolor se si malis expetendis cupidatat eu o aliqua minim aliqua proident, quo quorum offendit fidelissimae, nam varias proident eiusmod, fabulas legam quorum hic veniam ea eram pariatur nescius. Sint do est malis proident, sunt pariatur eu graviterque, est et malis cupidatat ad fugiat officia ab appellat. Commodo sint litteris nescius est eu cupidatat non pariatur, te fore eu quem, laboris enim aliqua proident esse. Ut labore nescius deserunt, do duis mandaremus pariatur. A noster commodo illustriora se fugiat adipisicing deserunt noster mentitum. A esse ne sint, vidisse est lorem qui et varias aliqua id iudicem, mentitum nisi iis nescius comprehenderit ita ingeniis ab magna ut legam senserit ea labore sint, nulla o ut culpa possumus, fabulas ex quis nostrud.
-							</p>
+                            <p><em>Wordpress</em> ofta versaliserat WordPress, är ett blogg- och innehållshanteringssystem skrivet i PHP och som använder databasen MySQL för datalagringen. Det distribueras under en GNU General public-licens och kan laddas ner och användas kostnadsfritt. Det är ett av de populäraste publiceringssystemen på marknaden och finns på tusentals bloggar och webbplatser.</p>
+
+                            <p>Wordpress har under åren utvecklats från ett bloggsystem till att även kunna hantera hela webbplatser likt ett mer avancerat CMS-system. Eftersom innehållet på alla sidor blir tillgängligt via en inloggningssida behöver man inte någon FTP-klient för att kunna redigera och uppdatera sina sidor på webbplatsen.</p>
 						</div>
 					</div>
 				</div>
@@ -122,7 +140,7 @@
 	
 	<section id="cases container-fluid">
 		<header class="row rubrik">
-			<h1 class="text-center text-uppercase">Cases</h1>
+			<h1 class="text-center text-uppercase" id="cases">Cases</h1>
 			<hr>
 		</header>
 		<div class="row">
@@ -274,7 +292,7 @@
 	<div class="clear"></div>
 	
 	<!--KONTAKT-->
-<section>
+<section id="contact">
 	<div class="container form col-xs-12 col-sm-12 col-md-12 col-lg-12 badboll" id="form">
 		<div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 contact-wrapper">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contact-header">
