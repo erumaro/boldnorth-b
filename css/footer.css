@@ -127,7 +127,8 @@ input[type="email"]:focus,
 @media screen and (min-width: 768px) {
 	
 	.contact-wrapper {
-		margin: 70px 0 70px 0;
+		margin-top: 70px;
+		margin-bottom: 70px;
 	}
 	   
 }
