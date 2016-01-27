@@ -1,0 +1,68 @@
+/* GENERIC STYLES */
+html, body {
+    background: #FFF;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* HEADING STYLE */
+
+.rubrik > h1 {
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 20px;
+  line-height: 70px;
+}
+
+.rubrik hr {
+  margin: 20px auto;
+  width: 10%;
+  border-top: 1px solid red;
+}
+
+/* CASES */
+
+.cases{
+    min-height: 110vh;
+}
+
+.case-item{
+    min-height: 400px;
+	height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.back{
+    background: #ebebeb;
+    padding: 2%;
+}
+
+.project-links{
+    list-style: none;
+    color: #fff;
+    padding: 0;
+}
+
+.project-links li{
+    display: inline-block;
+    padding: 2%;
+    background: #333;
+}
+
+.project-links li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.project-links li a:hover{
+	text-decoration: underline;
+}
+
+.project-links li a i{
+	margin-right: 6px;
+}
