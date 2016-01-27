@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 .members {
-  height: 60vh;
+  min-height: 60vh;
 }
 
 /* --- ABOUT --- */
