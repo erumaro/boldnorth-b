@@ -1,3 +1,21 @@
+.case-item{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.back{
+	height: auto;
+    background: #ebebeb;
+    border: 1px solid #ebebeb;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 2%;
+}
+
+.project-links{
+    padding: 0;
+}
+
 .project-links li{
     display: inline-block;
     padding: 2%;
